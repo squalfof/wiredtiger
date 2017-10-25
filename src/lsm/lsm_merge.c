@@ -301,8 +301,8 @@ retry_find:
 			 * intermediate state will be reset. Since there's no
 			 * easy way to restore youngest_gen and oldest_gen.
 			 */
-			__lsm_merge_clear(session,
-		            lsm_tree, start_chunk, nchunks);
+			__lsm_merge_clear(
+		            session, lsm_tree, start_chunk, nchunks);
 			--end_chunk;
 			goto retry_find;
 		} else if (nchunks == merge_max)
